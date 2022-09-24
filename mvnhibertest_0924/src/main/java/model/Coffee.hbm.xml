@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2020/2/18 ?W?? 10:35:48 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.Coffee" table="COFFEES">
+        <id name="supId" type="int">
+            <column name="SUP_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="cofName" type="java.lang.String">
+            <column name="COF_NAME" />
+        </property>
+        <property name="price" type="java.math.BigDecimal">
+            <column name="PRICE" />
+        </property>
+        <property name="sales" type="int">
+            <column name="SALES" />
+        </property>
+        <property name="total" type="int">
+            <column name="TOTAL" />
+        </property>
+    </class>
+</hibernate-mapping>
